@@ -128,7 +128,7 @@ main a:hover {
 /*************************** Footer ***************************/
 
 .site-footer {
-    margin-top: auto;
+    margin: 2rem 0 0 0;
     border-top: 2px solid var(--anthracite);
 }
 
