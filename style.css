@@ -2,6 +2,7 @@
     --blue-accent: #001e3b;
     --zju-blue: #014389;
     --anthracite: #2f3337;
+    --anthracite-lite: #6D7073;
 }
 
 body {
@@ -88,9 +89,8 @@ main h2 {
 
 main h3 {
     color: var(--blue-accent);
-    font-size: 1.1rem;
-    margin-top: 1.5rem;
-    margin-bottom: 0.4rem;
+    font-size: 1.2rem;
+    margin: 0 0 0.4rem 0;
 }
 
 main p {
