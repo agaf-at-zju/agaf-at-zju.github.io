@@ -4,10 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arithmetic Geometry in Hangzhou, November 2026</title>
+
+    <!-- MathJax for TeX formula rendering -->
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        }
+      };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
     <style>
         :root {
             --anthracite: #2f3337;
             --green-accent: #3b6347;
+            --red-accent: #8B0000;
             --white: #ffffff;
         }
 
@@ -64,7 +76,14 @@
         h4 {
             margin: 1.2rem 0 0.7rem 0;
             font-size: 1.2rem;
-            color: #8B0000;
+            color: var(--red-accent);
+        }
+
+        h5 {
+            margin: 0 0 0 0;
+            font-size: 1.2rem;
+            color: var(--red-accent);
+            display: inline;
         }
 
         p {
@@ -85,65 +104,354 @@
             object-fit: cover;
             display: block;
         }
+
+        /* Schedule Table */
+        .schedule-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.95rem;
+            margin: 10px auto 0 auto;
+        }
+
+        .schedule-table th,
+        .schedule-table td {
+            border: 1px solid #d0d7de;
+            padding: 10px 8px;
+            text-align: center;
+        }
+
+        .schedule-table th {
+            background-color: #f6f8fa;
+            color: var(--anthracite);
+            font-weight: 600;
+        }
+
+        .schedule-table tr:nth-child(even) {
+            background-color: #fafbfc;
+        }
+
+        .schedule-table .time-col {
+            white-space: nowrap;
+            font-weight: 600;
+            color: var(--anthracite);
+        }
+
+        .schedule-table a {
+            color: var(--green-accent);
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        /* Abstract section*/
+        .abstracts-section {
+            margin-top: 1.2rem;
+            padding-top: 1.2rem;
+            border-top: 1px dashed #d0d7de;
+        }
+
+        .info-section {
+            margin-top: 0rem;
+            padding-top: 0.3rem;
+        }
+
+        .info-card {
+            background-color: #fafbfc;
+            border: 1px solid #e1e4e8;
+            border-left: 4px solid var(--green-accent);
+            padding: 0.7rem 1.2rem;
+            border-radius: 3px;
+            box-sizing: border-box;
+            margin: 0.4rem 0 0 0;
+        }
+
+        .info-card h4 {
+            margin: 0 0 0.6rem 0;
+            font-size: 1.1rem;
+            color: var(--green-accent);
+        }
+
+        .info-card h5 {
+            margin: 0 0 0.6rem 0;
+            font-size: 1.1rem;
+            color: var(--red-accent);
+        }
+
+        .info-card p {
+            margin: 0.5rem 0 0 0;
+        }
+
+        .info-card ul {
+            margin: 0 0 0.2rem 0;
+        }
+
+        .info-card li {
+            margin: 0.4rem 0 0 0;
+        }
     </style>
 </head>
 <body>
-
     <header>
         <h1>Arithmetic Geometry in Hangzhou</h1>
 		<h2>Zhejiang University, November 2-6, 2026</h2>
-		<h4>with mini courses on Oct. 31/Nov. 1</h3>
+		<h4>with mini courses on Oct. 31/Nov. 1</h4>
     </header>
 
     <main>
-		<p style="font-size:1rem;">A conference about Shimura varieties, p-adic geometry, and automorphic representation theory which will take
-		place during <b>November 2-6</b> at the School of Mathematic Sciences of <b>Zhejiang University</b> in Hangzhou.
-		It was originally inspired by a similar event in <a style="color:var(--green-accent); font-weight: bold; text-decoration: none;" href="https://huigaomath.github.io/events/2025/2025-arithgeom-shenzhen.html">Shenzhen 2025</a>. Two <b>mini courses</b> for PhD students will be offered on Saturday and Sunday directly before.</p>
-		<h3>Speakers</h3>
-		<ul style="text-align: left; column-count: 2; column-gap: 2rem; line-height: 1.7;">
-			<li> <a style="color: black; text-decoration: none;" href="https://www.i2m.univ-amu.fr/user/raphael.beuzart-plessis/">Raphaël Beuzart Plessis (CNRS, Aix-Marseille University)</a></li>
-			<li> <a style="color: black; text-decoration: none;" href="https://rycchen.github.io/">Ryan Chen (MPI Bonn)</a></li>
-			<li> <a style="color: black; text-decoration: none;" href="http://faculty.bicmr.pku.edu.cn/~dongbin/">Bin Dong (PKU)</a></li>
-			<li> <a style="color: black; text-decoration: none;" href="https://webusers.imj-prg.fr/~laurent.fargues/">Laurent Fargues (CNRS, Jussieu)</a></li>
-			<li> <a style="color: black; text-decoration: none;" href="https://www.homepages.ucl.ac.uk/~ucahljg/index.htm">Luis Garcia (UC London)</a></li>
-			<li> <a style="color: black; text-decoration: none;" href="https://huigaomath.github.io/">Hui Gao (SUSTech)</a></li>
-			<li> <a style="color: black; text-decoration: none;" href="https://sites.google.com/bc.edu/benjamin-howard/home/">Ben Howard (Boston College)</a></li>
-			<li> <a style="color: black; text-decoration: none;" href="https://www.kias.re.kr/kias/people/faculty/viewMember.do?memberId=11030&amp;menuNo=403008">Heejong Lee (Korea IAS)</a></li>
-			<li> <a style="color: black; text-decoration: none;" href="https://siyinglee.github.io/">Si Ying Lee (NU Singapore)</a></li>
-			<li> <a style="color: black; text-decoration: none;" href="https://www.mcm.ac.cn/people/members/202207/t20220727_1094326.html">Shizhang Li (CAS, Morningside Center)</a></li>
-			<li> <a style="color: black; text-decoration: none;" href="https://www.math.uni-bonn.de/people/rapoport/index?language=en">Michael Rapoport (Uni Bonn)</a></li>
-			<li> <a style="color: black; text-decoration: none;" href="https://www.mpim-bonn.mpg.de/node/13832">Juan Esteban Rodríguez Camargo (MPI Bonn)</a></li>
-			<li> <a style="color: black; text-decoration: none;" href="http://faculty.bicmr.pku.edu.cn/~lxiao/">Liang Xiao (PKU)</a></li>
-			<li> <a style="color: black; text-decoration: none;" href="https://math.mit.edu/~wz2113/">Wei Zhang (MIT)</a></li>
-		</ul>
+        <details>
+            <summary><h5>Overview</h5></summary>
+            <p style="font-size:1rem;">A conference about Shimura varieties, p-adic geometry, and automorphic representation theory which will take
+            place during <b>November 2-6</b> at the School of Mathematic Sciences of <b>Zhejiang University</b> in Hangzhou.
+            It was originally inspired by a similar event in <a style="color:var(--green-accent); font-weight: bold; text-decoration: none;" href="https://huigaomath.github.io/events/2025/2025-arithgeom-shenzhen.html">Shenzhen 2025</a>. Two <b>mini courses</b> for PhD students will be offered on Saturday and Sunday directly before.</p>
+            <h3>Speakers</h3>
+            <ul style="text-align: left; column-count: 2; column-gap: 2rem; line-height: 1.7;">
+                <li> <a style="color: black; text-decoration: none;" href="https://www.i2m.univ-amu.fr/user/raphael.beuzart-plessis/">Raphaël Beuzart Plessis (CNRS, Aix-Marseille University)</a></li>
+                <li> <a style="color: black; text-decoration: none;" href="https://rycchen.github.io/">Ryan Chen (MPI Bonn)</a></li>
+                <li> <a style="color: black; text-decoration: none;" href="http://faculty.bicmr.pku.edu.cn/~dongbin/">Bin Dong (PKU)</a></li>
+                <li> <a style="color: black; text-decoration: none;" href="https://webusers.imj-prg.fr/~laurent.fargues/">Laurent Fargues (CNRS, Jussieu)</a></li>
+                <li> <a style="color: black; text-decoration: none;" href="https://www.homepages.ucl.ac.uk/~ucahljg/index.htm">Luis Garcia (UC London)</a></li>
+                <li> <a style="color: black; text-decoration: none;" href="https://huigaomath.github.io/">Hui Gao (SUSTech)</a></li>
+                <li> <a style="color: black; text-decoration: none;" href="https://sites.google.com/bc.edu/benjamin-howard/home/">Ben Howard (Boston College)</a></li>
+                <li> <a style="color: black; text-decoration: none;" href="https://www.kias.re.kr/kias/people/faculty/viewMember.do?memberId=11030&amp;menuNo=403008">Heejong Lee (Korea IAS)</a></li>
+                <li> <a style="color: black; text-decoration: none;" href="https://siyinglee.github.io/">Si Ying Lee (NU Singapore)</a></li>
+                <li> <a style="color: black; text-decoration: none;" href="https://www.mcm.ac.cn/people/members/202207/t20220727_1094326.html">Shizhang Li (CAS, Morningside Center)</a></li>
+                <li> <a style="color: black; text-decoration: none;" href="https://www.math.uni-bonn.de/people/rapoport/index?language=en">Michael Rapoport (Uni Bonn)</a></li>
+                <li> <a style="color: black; text-decoration: none;" href="https://www.mpim-bonn.mpg.de/node/13832">Juan Esteban Rodríguez Camargo (MPI Bonn)</a></li>
+                <li> <a style="color: black; text-decoration: none;" href="http://faculty.bicmr.pku.edu.cn/~lxiao/">Liang Xiao (PKU)</a></li>
+                <li> <a style="color: black; text-decoration: none;" href="https://math.mit.edu/~wz2113/">Wei Zhang (MIT)</a></li>
+            </ul>
 
-		<h3>Mini courses</h3>
-		<p>Two mini courses aimed at PhD students, each 4x60 minutes, will take place on October 31st and November 1st.</p>
-		<ul style="text-align: left; line-height: 1.7;">
-			<li> <a style="color: black; text-decoration: none;" href="https://www.mathematik.tu-darmstadt.de/fb/personal/details/riccardo_zuffetti.de.jsp">Riccardo Zuffetti (Darmstadt)</a> - The geometric Siegel-Weil formula</li>
-			<li> <a style="color: black; text-decoration: none;" href="https://sebastianbartling.github.io/">Sebastian Bartling (Essen)</a> - The Gross-Hopkins period map</li>
-		</ul>
+            <h3>Mini courses</h3>
+            <p>Two mini courses aimed at PhD students, each 4x60 minutes, will take place on October 31st and November 1st.</p>
+            <ul style="text-align: left; line-height: 1.7;">
+                <li> <a style="color: black; text-decoration: none;" href="https://www.mathematik.tu-darmstadt.de/fb/personal/details/riccardo_zuffetti.de.jsp">Riccardo Zuffetti (Darmstadt)</a> - The geometric Siegel-Weil formula</li>
+                <li> <a style="color: black; text-decoration: none;" href="https://sebastianbartling.github.io/">Sebastian Bartling (Essen)</a> - The Gross-Hopkins period map</li>
+            </ul>
 
-		<p>Organized by <a style="color:var(--green-accent); font-weight: bold; text-decoration: none;" href="https://polvanhoften2.github.io/">Pol van Hoften</a>,
-		<a style="color:var(--green-accent); font-weight: bold; text-decoration: none;" href="https://amihatsch.github.io/">Andreas Mihatsch</a>,
-		and <a style="color:var(--green-accent); font-weight: bold; text-decoration: none;" href="https://youshengshi.github.io/yousheng-s-website/">Yousheng Shi</a>.</p>
+            <p>Organized by <a style="color:var(--green-accent); font-weight: bold; text-decoration: none;" href="https://polvanhoften2.github.io/">Pol van Hoften</a>,
+            <a style="color:var(--green-accent); font-weight: bold; text-decoration: none;" href="https://amihatsch.github.io/">Andreas Mihatsch</a>,
+            and <a style="color:var(--green-accent); font-weight: bold; text-decoration: none;" href="https://youshengshi.github.io/yousheng-s-website/">Yousheng Shi</a>.</p>
+        </details>
 		
 		<hr style="width: 100%; margin: 2rem 0rem 0rem 0rem auto; border: none; border-top: 1px solid var(--anthracite);">
 		
-		<h3>Registration</h3>
-		<p style="margin-bottom: 6px;">Official registration is closed. Please contact the organizers if you'd like to attend the event.</p>
-		<h3>Travel and accommodation</h3>
-		<p>The direct flight to Shanghai with taxi or train to Hangzhou is usually the fastest for international travelers. Hangzhou airport is more
-		convenient only if it does not lead to additional change of planes.</p>
-		<p>We have prebooked rooms at the <a style="color:var(--green-accent); font-weight: bold; text-decoration: none;" href="https://www.shama.com/zijingang-hangzhou">Shama Hotel</a>
-		and the <a style="color:var(--green-accent); font-weight: bold; text-decoration: none;" href="https://www.agoda.com/zh-hk/rezen-dong-hotel-hangzhou-xixi-longhu-paradise-walk/hotel/hangzhou-cn.html">Licheng Donggu Hotel</a>
-		which you may sign up for during registration. Please kindly note that participants will still pay for their rooms themselves (see below, however).
-		<h3>Funding Support</h3>
-		<p>We have some available funding to cover hotel costs, especially for more junior participants.
-		If you would like to apply for such support, please indicate so during the registration and also provide a short description of your background to
-		help us distribute the funds.</p>
-		
-	<img src="HZ.jpg" style="width: 100%;" alt="West Lake, Hangzhou">
+		<details>
+            <summary><h5>Directions and venue information</h5></summary>
+            <div class="info-section">
+                <div class="info-card">
+                <h4>Lectures</h4>
+                    <ul>
+                        <li>All lectures at the <strong>School of Mathematical Sciences, Zijingang Campus</strong> (数学科学学院, 紫金港校区)<br>(not to be confused with the Institute for Advanced Study in Mathematics on the same campus)</li>
+                        <li>Lecture hall on the <strong>2nd floor</strong></li>
+                        <li>Bus shuttle from Shama Hotel to the venue <strong>leaving at 9:00 am</strong></li>
+                        <li>Taxis/Didis can enter campus to bring you directly to the venue</li>
+                        <li>Walking distance: 2.5 km (Shama Hotel) or 1.2 km (Licheng Donggu Hotel)</li>
+                    </ul>
+                </div>
+                <div class="info-card">
+                    <h4>Lunch</h4>
+                    <ul>
+                        <li>Lunch in the <strong>Chengyue Dining Hall, 3rd floor</strong>, about 300 meters from the lecture hall</li>
+                    </ul>
+                </div>
+            </div>
+		</details>
+
+        <hr style="width: 100%; margin: 2rem 0rem 0rem 0rem auto; border: none; border-top: 1px solid var(--anthracite);">
+
+        <details>
+            <summary><h5>Mini courses schedule (Oct 31, Nov 1)</h5></summary>
+            <table class="schedule-table" style="width:60%;">
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Saturday</th>
+                        <th>Sunday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="time-col">09:00 – 09:30</td>
+                        <td>Registration</td>
+                        <td>—</td>
+                    </tr>
+                    <tr>
+                        <td class="time-col">09:30 – 10:30</td>
+                        <td>GH Period Map 1</td>
+                        <td>GH Period Map 3</td>
+                    </tr>
+                    <tr>
+                        <td class="time-col">11:00 – 12:00</td>
+                        <td>GH Period Map 2</td>
+                        <td>GH Period Map 4</td>
+                    </tr>
+                    <tr>
+                        <td class="time-col"></td>
+                        <td>- Lunch Break -</td>
+                        <td>- Lunch Break -</td>
+                    </tr>
+                    <tr>
+                        <td class="time-col">14:00 – 15:00</td>
+                        <td>SW Formula 1</td>
+                        <td>SW Formula 3</td>
+                    </tr>
+                    <tr>
+                        <td class="time-col">15:30 – 16:30</td>
+                        <td>SW Formula 2</td>
+                        <td>SW Formula 4</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="abstracts-section">
+                <div class="info-card">
+                    <h4>Sebastian Bartling</h4>
+                    <h5>The Gross&ndash;Hopkins Period Map</h5>
+                    <p>After introducing Barsotti&ndash;Tate groups and Rapoport&ndash;Zink spaces, we construct the Gross&ndash;Hopkins period map on Lubin&ndash;Tate space via formal group laws and sketch its modern interpretation via the Fargues&ndash;Fontaine curve.</p>
+                </div>
+                <div class="info-card">
+                    <h4>Riccardo Zuffetti</h4>
+                    <h5>The Geometric Siegel&ndash;Weil Formula</h5>
+                    <p>A classical theorem of Siegel states that a weighted average of theta series associated with positive definite lattices in a fixed genus is an Eisenstein series. The work of Weil and Kudla&ndash;Rallis extends this identity to indefinite quadratic spaces. In the first half of this mini-course, I will present these results, first in the classical language of modular forms and then over the adeles. In the second half, I will introduce orthogonal Shimura varieties and explain Kudla's geometric version of the Siegel&ndash;Weil formula, which identifies the generating series of volumes of certain algebraic cycles on these varieties with an Eisenstein series.</p>
+                </div>
+
+
+            </div>
+        </details>
+
+
+        <hr style="width: 100%; margin: 2rem 0rem 0rem 0rem auto; border: none; border-top: 1px solid var(--anthracite);">
+
+        <details open>
+            <summary><h5>Conference schedule (Nov 2&ndash;6)</h5></summary>
+            <table class="schedule-table" style="width:95%;">
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="time-col">09:00 — 09:30</td>
+                        <td>Registration</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="time-col">09:30 — 10:30</td>
+                        <td><a href="#LXiao">Liang Xiao</a></td>
+                        <td><a href="#SYLee">Si Ying Lee</a></td>
+                        <td><a href="#IGleason">Ian Gleason</a></td>
+                        <td>Wei Zhang</td>
+                        <td>Rong Zhou</td>
+                    </tr>
+                    <tr>
+                        <td class="time-col">11:00 — 12:00</td>
+                        <td><a href="#SZLi">Shizhang Li</a></td>
+                        <td><a href="#JERC">J. E. Rodríguez<br>Camargo</a></td>
+                        <td><a href="#MRapoport">Michael Rapoport</a></td>
+                        <td><a href="#RChen">Ryan Chen</a></td>
+                        <td>Laurent Fargues</td>
+                    </tr>
+                    <tr>
+                        <td class="time-col">14:00 — 15:00</td>
+                        <td><a href="#HGao">Hui Gao</a></td>
+                        <td><a href="#RBP">Raphaël<br>Beuzart-Plessis</a></td>
+                        <td>—</td>
+                        <td><a href="#BHoward">Ben Howard</a></td>
+                        <td>—</td>
+                    </tr>
+                    <tr>
+                        <td class="time-col">15:30 – 16:30</td>
+                        <td><a href="#HJLee">Heejong Lee</a></td>
+                        <td><a href="#BDong">Bin Dong</a></td>
+                        <td>—</td>
+                        <td>Luis Garcia</td>
+                        <td>—</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="abstracts-section">
+                <div class="info-card" id="RBP">
+                    <h4>Raphaël Beuzart-Plessis</h4>
+                    <h5>On the $p$-adic interpolation of Fourier&ndash;Jacobi periods for unitary groups</h5>
+                    <p>In this talk, I will present joint work with X. Dimitrakopoulou on the $p$-adic interpolation of Fourier&ndash;Jacobi periods on unitary groups that are compact at infinity. This involves revisiting part of Mumford's geometric construction of theta series, and has application to the construction of $p$-adic $L$-functions for $U(n)\times U(n)$.</p>
+                </div>
+                <div class="info-card" id="RChen">
+                    <h4>Ryan Chen</h4>
+                    <h5>Log derivatives and average height defects for CM $p$-divisible groups</h5>
+                    <p>For abelian varieties with CM by the maximal order in a CM field, the Colmez conjecture predicts a precise formula relating the Faltings height of the abelian variety with log derivatives of certain Artin $L$-functions. This is no longer true for CM by non-maximal orders, where the Faltings height differs by a "height defect". In several cases, this "height defect" can be related with log derivatives of local Whittaker functions or orbital integrals, after a suitable average. In the setting of unitary Shimura varieties, we explain how this "average height defect" can be formulated in terms of CM cycles on Rapoport--Zink spaces, and propose a conjectural relation with log derivatives of orbital integrals. This is from joint work with Weixiao Lu.</p>
+                </div>
+                <div class="info-card" id="BDong">
+                    <h4>Bin Dong</h4>
+                    <h5>Design and Practice of AI Agents for Mathematical Discovery</h5>
+                    <p>Artificial intelligence is beginning to transform how mathematical research is conducted. This talk presents a suite of AI agents for mathematical research developed by our group at Peking University. The agents combine mathematical information retrieval, retrieval-augmented autoformalization, and automated reasoning. I will discuss their design principles, system architectures, and practical implementation, and illustrate their capabilities through case studies involving open mathematical problems. These examples highlight how AI agents can support knowledge discovery, problem formalization, and exploratory reasoning. The talk will conclude with a brief perspective on future directions for AI-driven mathematical research.</p>
+                </div>
+                <div class="info-card" id="HGao">
+                    <h4>Hui Gao</h4>
+                    <h5>Galois Representations over the Convergent de Rham Period Ring</h5>
+                    <p>Inside Fontaine's de Rham period ring $B_\mathrm{dR}^+$, there is a convergent subring which is exactly the (un-completed) stalk at the de Rham point of the Fargues&ndash;Fontaine curve. We study Galois representations over this convergent subring, and compare with the classical theory over $B_\mathrm{dR}^+$. Some tools in $p$-adic differential equations, in particular, the $p$-adic non-Liouville conditions will naturally appear. This is joint work with Yupeng Wang.</p>
+                </div>
+                <div class="info-card" id="IGleason">
+                    <h4>Ian Gleason</h4>
+                    <h5>Towards a local model diagram beyond the minuscule case</h5>
+                    <p>The local model diagram is a key tool in the study of integral models of Shimura varieties, as it gives control over the sheaf of nearby cycles. In this talk, we explore a weak version of the local model diagram for integral models of moduli spaces of mixed-characteristic shtukas. We then discuss applications to the cohomology of $p$-adic period domains via affine Deligne&ndash;Lusztig varieties, and vice versa.</p>
+                </div>
+                <div class="info-card" id="BHoward">
+                    <h4>Ben Howard</h4>
+                    <h5>Kudla&ndash;Millson forms on toroidal compactifications</h5>
+                    <p>Kudla and Millson constructed modular forms valued in the cohomology of orthogonal and unitary Shimura varieties. I will explain that these have canonical extensions to modular forms valued in the cohomology of toroidal compactifications. This is joint work with Francois Greer and Salim Tayou.</p>
+                </div>
+                <div class="info-card" id="HJLee">
+                    <h4>Heejong Lee</h4>
+                    <h5>Aspects of the mod $p$ Langlands Program</h5>
+                    <p>The categorical $p$-adic Langlands program predicts a close relationship between the ($p$-adic and mod $p$) representation theory of $p$-adic groups and the geometry of moduli stacks of étale $(\varphi,\Gamma)$-modules, known as Emerton&ndash;Gee stacks. In this talk, I will discuss how the representation theory of $\mathrm{GL}_n$ over $p$-adic fields is reflected in the geometry of these stacks. In particular, I will explain how the mod $p$ geometry of Emerton&ndash;Gee stacks helps explain, at least in part, the striking differences between the mod $p$ representation theory of $\mathrm{GL}_2(\mathbb{Q}_p)$ and that of other $p$-adic groups.</p>
+                </div>
+                <div class="info-card" id="SYLee">
+                    <h4>Si Ying Lee</h4>
+                    <h5>Point Counting for Exceptional Shimura Varieties</h5>
+                    <p>I will talk about a general framework for defining $p$-isogenies with $G$-structure, as well as applications to counting mod $p$ points for Shimura varieties for which integral models are available, including those of exceptional type. This is joint work in progress with Keerthi Madapusi and Alex Youcis.</p>
+                </div>
+                <div class="info-card" id="SZLi">
+                    <h4>Shizhang Li</h4>
+                    <h5>A Cohomological Bestiary of Classifying Stacks</h5>
+                    <p>This talk will survey recent advances in our understanding of the cohomology of classifying stacks of group schemes. We will explain what it means to study Hodge theory in this setting and review results of Totaro, Antieau&ndash;Bhatt&ndash;Mathew, and Petrov. Time permitting, we will also discuss recent work of Kehao Cheng and my forthcoming joint work with Petrov and, separately, with Kubrak.</p>
+                </div>
+                <div class="info-card" id="MRapoport">
+                    <h4>Michael Rapoport</h4>
+                    <h5>$p$-Integral Hecke Correspondences</h5>
+                    <p>Shimura varieties admit vector bundles with liftings of the Hecke correspondences (automorphic vector bundles). These vector bundles have a natural extension to $p$-integral models of good reduction of Shimura varieties. I will address the problem of determining the optimal power of $p$ by which one has to multiply the Hecke correspondences in the generic fiber to obtain integral cohomological correspondences. Joint work with U. Görtz and X. He.</p>
+                </div>
+                <div class="info-card" id="JERC">
+                    <h4>Juan Esteban Rodríguez Camargo</h4>
+                    <h5>Rational Analytic Prismatization</h5>
+                    <p>Joint work with Anschütz, Le Bras and Scholze. I will give an introductory talk to the theory of the rational analytic prismatization and its applications to $p$-adic Hodge theory and the $p$-adic Langlands program. In particular, I will mention how different incarnations of the $p$-adic Riemann&ndash;Hilbert correspondence can be understood in terms of formal properties of analytic stacks and the prismatization.</p>
+                </div>
+                <div class="info-card" id="LXiao">
+                    <h4>Liang Xiao</h4>
+                    <h5>$p$-Primary isogenies of CM abelian varieties mod $p$</h5>
+                    <p>The CM theory of abelian varieties over $\mathbb{Q}$ describes how Tate modules of abelian varieties change under the action of the Galois group $\mathrm{Gal}(\overline{\mathbb{Q}}/\mathbb{Q})$ (not just the Galois group of the reflexive field). In this talk, I explain a joint work with Xinwen Zhu in progress, in which we study how $p$-primary isogenies of CM abelian varieties mod $p$ change the Tate modules of the abelian varieties. These $p$-primary isogenies do not necessarily lift to characteristic zero; they play an interesting role in the study of "exotic" Hecke correspondences between special fibers of Shimura varieties.</p>
+                </div>
+            </div>
+        </details>
+
+        <hr style="width: 100%; margin: 2rem 0rem 0rem 0rem auto; border: none; border-top: 1px solid var(--anthracite);">
+
+        <details>
+            <summary><h5>Registration and travel recommendations</h5></summary>
+            <h3>Registration</h3>
+            <p style="margin-bottom: 6px;">Official registration is closed. Please contact the organizers if you'd like to attend the event.</p>
+            <h3>Travel and accommodation</h3>
+            <p>The direct flight to Shanghai with taxi or train to Hangzhou is usually the fastest for international travelers. Hangzhou airport is more
+            convenient only if it does not lead to additional change of planes.</p>
+            <p>The two recommended hotels are the <a style="color:var(--green-accent); font-weight: bold; text-decoration: none;" href="https://www.shama.com/zijingang-hangzhou">Shama Hotel</a> and the <a style="color:var(--green-accent); font-weight: bold; text-decoration: none;" href="https://www.agoda.com/zh-hk/rezen-dong-hotel-hangzhou-xixi-longhu-paradise-walk/hotel/hangzhou-cn.html">Licheng Donggu Hotel</a>.</p>
+        </details>
+        <img src="HZ.jpg" style="width: 100%;" alt="West Lake, Hangzhou">
 	</main>
 </body>
 </html>
