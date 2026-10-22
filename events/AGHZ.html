@@ -45,7 +45,7 @@
 
         h1 {
             font-size: 2.2rem;
-			margin-bottom: .5em;
+			margin-bottom: .3em;
             letter-spacing: -0.02em;
         }
 
@@ -68,13 +68,13 @@
             color: var(--green-accent);
 			font-size: 1.5em;
             padding-bottom: 0.0rem;
-            padding-top: 0.4rem;
+            padding-top: 0;
             margin-top: 0;
 			margin-bottom: 0;
         }
 
         h4 {
-            margin: 1.2rem 0 0.7rem 0;
+            margin: 1rem 0 0.7rem 0;
             font-size: 1.2rem;
             color: var(--red-accent);
         }
@@ -110,7 +110,7 @@
             width: 100%;
             border-collapse: collapse;
             font-size: 0.95rem;
-            margin: 10px auto 0 auto;
+            margin: 0.8rem auto 0 auto;
         }
 
         .schedule-table th,
@@ -161,7 +161,7 @@
             padding: 0.7rem 1.2rem;
             border-radius: 3px;
             box-sizing: border-box;
-            margin: 0.4rem 0 0 0;
+            margin: 0.4rem 0 0.7rem 0;
         }
 
         .info-card h4 {
@@ -181,11 +181,18 @@
         }
 
         .info-card ul {
+            padding: 0 0 0 1rem;
             margin: 0 0 0.2rem 0;
         }
 
         .info-card li {
             margin: 0.4rem 0 0 0;
+        }
+
+        .funding {
+            display: flex;
+            align-items: center;
+            gap: 20px;
         }
     </style>
 </head>
@@ -197,47 +204,10 @@
     </header>
 
     <main>
-        <details>
-            <summary><h5>Overview</h5></summary>
-            <p style="font-size:1rem;">A conference about Shimura varieties, p-adic geometry, and automorphic representation theory which will take
-            place during <b>November 2-6</b> at the School of Mathematic Sciences of <b>Zhejiang University</b> in Hangzhou.
-            It was originally inspired by a similar event in <a style="color:var(--green-accent); font-weight: bold; text-decoration: none;" href="https://huigaomath.github.io/events/2025/2025-arithgeom-shenzhen.html">Shenzhen 2025</a>. Two <b>mini courses</b> for PhD students will be offered on Saturday and Sunday directly before.</p>
-            <h3>Speakers</h3>
-            <ul style="text-align: left; column-count: 2; column-gap: 2rem; line-height: 1.7;">
-                <li> <a style="color: black; text-decoration: none;" href="https://www.i2m.univ-amu.fr/user/raphael.beuzart-plessis/">Raphaël Beuzart Plessis (CNRS, Aix-Marseille University)</a></li>
-                <li> <a style="color: black; text-decoration: none;" href="https://rycchen.github.io/">Ryan Chen (MPI Bonn)</a></li>
-                <li> <a style="color: black; text-decoration: none;" href="http://faculty.bicmr.pku.edu.cn/~dongbin/">Bin Dong (PKU)</a></li>
-                <li> <a style="color: black; text-decoration: none;" href="https://webusers.imj-prg.fr/~laurent.fargues/">Laurent Fargues (CNRS, Jussieu)</a></li>
-                <li> <a style="color: black; text-decoration: none;" href="https://www.homepages.ucl.ac.uk/~ucahljg/index.htm">Luis Garcia (UC London)</a></li>
-                <li> <a style="color: black; text-decoration: none;" href="https://huigaomath.github.io/">Hui Gao (SUSTech)</a></li>
-                <li> <a style="color: black; text-decoration: none;" href="https://ianandreigf.github.io/Website/">Ian Gleason (NU Singapore)</a></li>
-                <li> <a style="color: black; text-decoration: none;" href="https://sites.google.com/bc.edu/benjamin-howard/home/">Ben Howard (Boston College)</a></li>
-                <li> <a style="color: black; text-decoration: none;" href="https://www.kias.re.kr/kias/people/faculty/viewMember.do?memberId=11030&amp;menuNo=403008">Heejong Lee (Korea IAS)</a></li>
-                <li> <a style="color: black; text-decoration: none;" href="https://siyinglee.github.io/">Si Ying Lee (NU Singapore)</a></li>
-                <li> <a style="color: black; text-decoration: none;" href="https://www.mcm.ac.cn/people/members/202207/t20220727_1094326.html">Shizhang Li (CAS, Morningside Center)</a></li>
-                <li> <a style="color: black; text-decoration: none;" href="https://www.math.uni-bonn.de/people/rapoport/index?language=en">Michael Rapoport (Uni Bonn)</a></li>
-                <li> <a style="color: black; text-decoration: none;" href="https://www.mpim-bonn.mpg.de/node/13832">Juan Esteban Rodríguez Camargo (MPI Bonn)</a></li>
-                <li> <a style="color: black; text-decoration: none;" href="http://faculty.bicmr.pku.edu.cn/~lxiao/">Liang Xiao (PKU)</a></li>
-                <li> <a style="color: black; text-decoration: none;" href="https://math.mit.edu/~wz2113/">Wei Zhang (MIT)</a></li>
-                <li> <a style="color: black; text-decoration: none;" href="https://www.dpmms.cam.ac.uk/~rz240/">Rong Zhou (Cambridge)</a></li>
-            </ul>
 
-            <h3>Mini courses</h3>
-            <p>Two mini courses aimed at PhD students, each 4x60 minutes, will take place on October 31st and November 1st.</p>
-            <ul style="text-align: left; line-height: 1.7;">
-                <li> <a style="color: black; text-decoration: none;" href="https://www.mathematik.tu-darmstadt.de/fb/personal/details/riccardo_zuffetti.de.jsp">Riccardo Zuffetti (Darmstadt)</a> - The geometric Siegel-Weil formula</li>
-                <li> <a style="color: black; text-decoration: none;" href="https://sebastianbartling.github.io/">Sebastian Bartling (Essen)</a> - The Gross-Hopkins period map</li>
-            </ul>
 
-            <p>Organized by <a style="color:var(--green-accent); font-weight: bold; text-decoration: none;" href="https://polvanhoften2.github.io/">Pol van Hoften</a>,
-            <a style="color:var(--green-accent); font-weight: bold; text-decoration: none;" href="https://amihatsch.github.io/">Andreas Mihatsch</a>,
-            and <a style="color:var(--green-accent); font-weight: bold; text-decoration: none;" href="https://youshengshi.github.io/yousheng-s-website/">Yousheng Shi</a>.</p>
-        </details>
-		
-		<hr style="width: 100%; margin: 2rem 0rem 0rem 0rem auto; border: none; border-top: 1px solid var(--anthracite);">
-		
 		<details>
-            <summary><h5>Directions and venue information</h5></summary>
+            <summary><h5>Venue information</h5></summary>
             <div class="info-section">
                 <div class="info-card">
                 <h4>Lectures</h4>
@@ -261,28 +231,28 @@
         <hr style="width: 100%; margin: 2rem 0rem 0rem 0rem auto; border: none; border-top: 1px solid var(--anthracite);">
 
         <details>
-            <summary><h5>Mini courses schedule (Oct 31, Nov 1)</h5></summary>
+            <summary><h5>Mini course schedule</h5></summary>
             <table class="schedule-table" style="width:60%;">
                 <thead>
                     <tr>
                         <th>Time</th>
-                        <th>Saturday</th>
-                        <th>Sunday</th>
+                        <th>Saturday (Oct 31)</th>
+                        <th>Sunday (Nov 1)</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td class="time-col">09:00 – 09:30</td>
+                        <td class="time-col">09:00 &ndash; 09:30</td>
                         <td>Registration</td>
-                        <td>—</td>
+                        <td></td>
                     </tr>
                     <tr>
-                        <td class="time-col">09:30 – 10:30</td>
+                        <td class="time-col">09:30 &ndash; 10:30</td>
                         <td>GH Period Map 1</td>
                         <td>GH Period Map 3</td>
                     </tr>
                     <tr>
-                        <td class="time-col">11:00 – 12:00</td>
+                        <td class="time-col">11:00 &ndash; 12:00</td>
                         <td>GH Period Map 2</td>
                         <td>GH Period Map 4</td>
                     </tr>
@@ -292,12 +262,12 @@
                         <td>- Lunch Break -</td>
                     </tr>
                     <tr>
-                        <td class="time-col">14:00 – 15:00</td>
+                        <td class="time-col">14:00 &ndash; 15:00</td>
                         <td>SW Formula 1</td>
                         <td>SW Formula 3</td>
                     </tr>
                     <tr>
-                        <td class="time-col">15:30 – 16:30</td>
+                        <td class="time-col">15:30 &ndash; 16:30</td>
                         <td>SW Formula 2</td>
                         <td>SW Formula 4</td>
                     </tr>
@@ -322,8 +292,8 @@
 
         <hr style="width: 100%; margin: 2rem 0rem 0rem 0rem auto; border: none; border-top: 1px solid var(--anthracite);">
 
-        <details open>
-            <summary><h5>Conference schedule (Nov 2&ndash;6)</h5></summary>
+        <details>
+            <summary><h5>Conference schedule</h5></summary>
             <table class="schedule-table" style="width:95%;">
                 <thead>
                     <tr>
@@ -337,7 +307,7 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td class="time-col">09:00 — 09:30</td>
+                        <td class="time-col">09:00 &ndash; 09:30</td>
                         <td>Registration</td>
                         <td></td>
                         <td></td>
@@ -345,7 +315,7 @@
                         <td></td>
                     </tr>
                     <tr>
-                        <td class="time-col">09:30 — 10:30</td>
+                        <td class="time-col">09:30 &ndash; 10:30</td>
                         <td><a href="#LXiao">Liang Xiao</a></td>
                         <td><a href="#SYLee">Si Ying Lee</a></td>
                         <td><a href="#IGleason">Ian Gleason</a></td>
@@ -353,7 +323,7 @@
                         <td>Rong Zhou</td>
                     </tr>
                     <tr>
-                        <td class="time-col">11:00 — 12:00</td>
+                        <td class="time-col">11:00 &ndash; 12:00</td>
                         <td><a href="#SZLi">Shizhang Li</a></td>
                         <td><a href="#JERC">J. E. Rodríguez<br>Camargo</a></td>
                         <td><a href="#MRapoport">Michael Rapoport</a></td>
@@ -361,7 +331,7 @@
                         <td>Laurent Fargues</td>
                     </tr>
                     <tr>
-                        <td class="time-col">14:00 — 15:00</td>
+                        <td class="time-col">14:00 &ndash; 15:00</td>
                         <td><a href="#HGao">Hui Gao</a></td>
                         <td><a href="#RBP">Raphaël<br>Beuzart-Plessis</a></td>
                         <td>—</td>
@@ -369,7 +339,7 @@
                         <td>—</td>
                     </tr>
                     <tr>
-                        <td class="time-col">15:30 – 16:30</td>
+                        <td class="time-col">15:30 &ndash; 16:30</td>
                         <td><a href="#HJLee">Heejong Lee</a></td>
                         <td><a href="#BDong">Bin Dong</a></td>
                         <td>—</td>
@@ -444,6 +414,45 @@
 
         <hr style="width: 100%; margin: 2rem 0rem 0rem 0rem auto; border: none; border-top: 1px solid var(--anthracite);">
 
+        <details open>
+            <summary><h5>Overview</h5></summary>
+            <p style="font-size:1rem;">A conference about Shimura varieties, p-adic geometry, and automorphic representation theory which will take
+            place during <b>November 2-6</b> at the School of Mathematic Sciences of <b>Zhejiang University</b> in Hangzhou.
+            It was originally inspired by a similar event in <a style="color:var(--green-accent); font-weight: bold; text-decoration: none;" href="https://huigaomath.github.io/events/2025/2025-arithgeom-shenzhen.html">Shenzhen 2025</a>. Two <b>mini courses</b> for PhD students will be offered on Saturday and Sunday directly before.</p>
+            <h3>Speakers</h3>
+            <ul style="text-align: left; column-count: 2; column-gap: 2rem; line-height: 1.7;">
+                <li> <a style="color: black; text-decoration: none;" href="https://www.i2m.univ-amu.fr/user/raphael.beuzart-plessis/">Raphaël Beuzart Plessis (CNRS, Aix-Marseille University)</a></li>
+                <li> <a style="color: black; text-decoration: none;" href="https://rycchen.github.io/">Ryan Chen (MPI Bonn)</a></li>
+                <li> <a style="color: black; text-decoration: none;" href="http://faculty.bicmr.pku.edu.cn/~dongbin/">Bin Dong (PKU)</a></li>
+                <li> <a style="color: black; text-decoration: none;" href="https://webusers.imj-prg.fr/~laurent.fargues/">Laurent Fargues (CNRS, Jussieu)</a></li>
+                <li> <a style="color: black; text-decoration: none;" href="https://www.homepages.ucl.ac.uk/~ucahljg/index.htm">Luis Garcia (UC London)</a></li>
+                <li> <a style="color: black; text-decoration: none;" href="https://huigaomath.github.io/">Hui Gao (SUSTech)</a></li>
+                <li> <a style="color: black; text-decoration: none;" href="https://ianandreigf.github.io/Website/">Ian Gleason (NU Singapore)</a></li>
+                <li> <a style="color: black; text-decoration: none;" href="https://sites.google.com/bc.edu/benjamin-howard/home/">Ben Howard (Boston College)</a></li>
+                <li> <a style="color: black; text-decoration: none;" href="https://www.kias.re.kr/kias/people/faculty/viewMember.do?memberId=11030&amp;menuNo=403008">Heejong Lee (Korea IAS)</a></li>
+                <li> <a style="color: black; text-decoration: none;" href="https://siyinglee.github.io/">Si Ying Lee (NU Singapore)</a></li>
+                <li> <a style="color: black; text-decoration: none;" href="https://www.mcm.ac.cn/people/members/202207/t20220727_1094326.html">Shizhang Li (CAS, Morningside Center)</a></li>
+                <li> <a style="color: black; text-decoration: none;" href="https://www.math.uni-bonn.de/people/rapoport/index?language=en">Michael Rapoport (Uni Bonn)</a></li>
+                <li> <a style="color: black; text-decoration: none;" href="https://www.mpim-bonn.mpg.de/node/13832">Juan Esteban Rodríguez Camargo (MPI Bonn)</a></li>
+                <li> <a style="color: black; text-decoration: none;" href="http://faculty.bicmr.pku.edu.cn/~lxiao/">Liang Xiao (PKU)</a></li>
+                <li> <a style="color: black; text-decoration: none;" href="https://math.mit.edu/~wz2113/">Wei Zhang (MIT)</a></li>
+                <li> <a style="color: black; text-decoration: none;" href="https://www.dpmms.cam.ac.uk/~rz240/">Rong Zhou (Cambridge)</a></li>
+            </ul>
+
+            <h3>Mini courses</h3>
+            <p>Two mini courses aimed at PhD students, each 4x60 minutes, will take place on October 31st and November 1st.</p>
+            <ul style="text-align: left; line-height: 1.7;">
+                <li> <a style="color: black; text-decoration: none;" href="https://www.mathematik.tu-darmstadt.de/fb/personal/details/riccardo_zuffetti.de.jsp">Riccardo Zuffetti (Darmstadt)</a> - The geometric Siegel-Weil formula</li>
+                <li> <a style="color: black; text-decoration: none;" href="https://sebastianbartling.github.io/">Sebastian Bartling (Essen)</a> - The Gross-Hopkins period map</li>
+            </ul>
+
+            <p>Organized by <a style="color:var(--green-accent); font-weight: bold; text-decoration: none;" href="https://polvanhoften2.github.io/">Pol van Hoften</a>,
+            <a style="color:var(--green-accent); font-weight: bold; text-decoration: none;" href="https://amihatsch.github.io/">Andreas Mihatsch</a>,
+            and <a style="color:var(--green-accent); font-weight: bold; text-decoration: none;" href="https://youshengshi.github.io/yousheng-s-website/">Yousheng Shi</a>.</p>
+        </details>
+
+		<hr style="width: 100%; margin: 2rem 0rem 0rem 0rem auto; border: none; border-top: 1px solid var(--anthracite);">
+
         <details>
             <summary><h5>Registration and travel recommendations</h5></summary>
             <h3>Registration</h3>
@@ -453,6 +462,19 @@
             convenient only if it does not lead to additional change of planes.</p>
             <p>The two recommended hotels are the <a style="color:var(--green-accent); font-weight: bold; text-decoration: none;" href="https://www.shama.com/zijingang-hangzhou">Shama Hotel</a> and the <a style="color:var(--green-accent); font-weight: bold; text-decoration: none;" href="https://www.agoda.com/zh-hk/rezen-dong-hotel-hangzhou-xixi-longhu-paradise-walk/hotel/hangzhou-cn.html">Licheng Donggu Hotel</a>.</p>
         </details>
+
+        <hr style="width: 100%; margin: 2rem 0rem 0rem 0rem auto; border: none; border-top: 1px solid var(--anthracite);">
+
+		<details>
+            <summary><h5>Funding statement</h5></summary>
+            <div class="funding">
+                <img src="NWO.svg" style="margin: 0 0 0 1rem;">
+                <p> This conference is partially funded by the Dutch Research Council (NWO) through grant VI.Veni.232.127.</p>
+            </div>
+		</details>
+
+        <hr style="width: 100%; margin: 2rem 0rem 0rem 0rem auto; border: none; border-top: 1px solid var(--anthracite);">
+
         <img src="HZ.jpg" style="width: 100%;" alt="West Lake, Hangzhou">
 	</main>
 </body>
