@@ -126,23 +126,25 @@
             font-weight: 600;
         }
 
-        .schedule-table tr:nth-child(even) {
-            background-color: #fafbfc;
+        .schedule-table .talk {
+            background-color: #f6f8fa;
+            font-weight: 600;
+            font-size: 0.95rem;
+            color: var(--anthracite);
         }
 
         .schedule-table .time-col {
             white-space: nowrap;
             font-weight: 600;
+            font-size: 0.95rem;
             color: var(--anthracite);
         }
 
         .schedule-table a {
             color: var(--green-accent);
-            font-weight: 600;
             text-decoration: none;
         }
 
-        /* Abstract section*/
         .abstracts-section {
             margin-top: 1.2rem;
             padding-top: 1.2rem;
@@ -167,7 +169,7 @@
         .info-card h4 {
             margin: 0 0 0.6rem 0;
             font-size: 1.1rem;
-            color: var(--green-accent);
+            color: var(--red-accent);
         }
 
         .info-card h5 {
@@ -236,8 +238,8 @@
                 <thead>
                     <tr>
                         <th>Time</th>
-                        <th>Saturday (Oct 31)</th>
-                        <th>Sunday (Nov 1)</th>
+                        <th>Saturday</th>
+                        <th>Sunday</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -248,28 +250,27 @@
                     </tr>
                     <tr>
                         <td class="time-col">09:30 &ndash; 10:30</td>
-                        <td>GH Period Map 1</td>
-                        <td>GH Period Map 3</td>
+                        <td class="talk">GH Period Map 1</td>
+                        <td class="talk">GH Period Map 3</td>
                     </tr>
                     <tr>
                         <td class="time-col">11:00 &ndash; 12:00</td>
-                        <td>GH Period Map 2</td>
-                        <td>GH Period Map 4</td>
+                        <td class="talk">GH Period Map 2</td>
+                        <td class="talk">GH Period Map 4</td>
                     </tr>
                     <tr>
-                        <td class="time-col"></td>
-                        <td>- Lunch Break -</td>
-                        <td>- Lunch Break -</td>
+                        <td class="time-col">12:00 &ndash; 14:00</td>
+                        <td colspan="2">Lunch Break</td>
                     </tr>
                     <tr>
                         <td class="time-col">14:00 &ndash; 15:00</td>
-                        <td>SW Formula 1</td>
-                        <td>SW Formula 3</td>
+                        <td class="talk">SW Formula 1</td>
+                        <td class="talk">SW Formula 3</td>
                     </tr>
                     <tr>
                         <td class="time-col">15:30 &ndash; 16:30</td>
-                        <td>SW Formula 2</td>
-                        <td>SW Formula 4</td>
+                        <td class="talk">SW Formula 2</td>
+                        <td class="talk">SW Formula 4</td>
                     </tr>
                 </tbody>
             </table>
@@ -297,16 +298,16 @@
             <table class="schedule-table" style="width:95%;">
                 <thead>
                     <tr>
-                        <th>Time</th>
-                        <th>Monday</th>
-                        <th>Tuesday</th>
-                        <th>Wednesday</th>
-                        <th>Thursday</th>
-                        <th>Friday</th>
+                        <th style="width:15%">Time</th>
+                        <th style="width:17%">Monday</th>
+                        <th style="width:17%">Tuesday</th>
+                        <th style="width:17%">Wednesday</th>
+                        <th style="width:17%">Thursday</th>
+                        <th style="width:17%">Friday</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
+                    <tr style="height:3.3rem">
                         <td class="time-col">09:00 &ndash; 09:30</td>
                         <td>Registration</td>
                         <td></td>
@@ -314,37 +315,39 @@
                         <td></td>
                         <td></td>
                     </tr>
-                    <tr>
+                    <tr style="height:4.3rem">
                         <td class="time-col">09:30 &ndash; 10:30</td>
-                        <td><a href="#LXiao">Liang Xiao</a></td>
-                        <td><a href="#SYLee">Si Ying Lee</a></td>
-                        <td><a href="#IGleason">Ian Gleason</a></td>
-                        <td>Wei Zhang</td>
-                        <td>Rong Zhou</td>
+                        <td class="talk"><a href="#LXiao">Liang Xiao</a></td>
+                        <td class="talk"><a href="#SYLee">Si Ying Lee</a></td>
+                        <td class="talk"><a href="#IGleason">Ian Gleason</a></td>
+                        <td class="talk">Wei Zhang</td>
+                        <td class="talk">Rong Zhou</td>
                     </tr>
-                    <tr>
+                    <tr style="height:4.3rem">
                         <td class="time-col">11:00 &ndash; 12:00</td>
-                        <td><a href="#SZLi">Shizhang Li</a></td>
-                        <td><a href="#JERC">J. E. Rodríguez<br>Camargo</a></td>
-                        <td><a href="#MRapoport">Michael Rapoport</a></td>
-                        <td><a href="#RChen">Ryan Chen</a></td>
-                        <td>Laurent Fargues</td>
+                        <td class="talk"><a href="#SZLi">Shizhang Li</a></td>
+                        <td class="talk"><a href="#JERC">Juan E. R. Camargo</a></td>
+                        <td class="talk"><a href="#MRapoport">Michael Rapoport</a></td>
+                        <td class="talk"><a href="#RChen">Ryan Chen</a></td>
+                        <td class="talk">Laurent Fargues</td>
                     </tr>
-                    <tr>
+                    <tr style="height:3.3rem">
+                        <td class="time-col">12:00 &ndash; 14:00</td>
+                        <td colspan="5">Lunch Break</td>
+                    </tr>
+                    <tr style="height:4.3rem">
                         <td class="time-col">14:00 &ndash; 15:00</td>
-                        <td><a href="#HGao">Hui Gao</a></td>
-                        <td><a href="#RBP">Raphaël<br>Beuzart-Plessis</a></td>
-                        <td>—</td>
-                        <td><a href="#BHoward">Ben Howard</a></td>
-                        <td>—</td>
+                        <td class="talk"><a href="#HGao">Hui Gao</a></td>
+                        <td class="talk"><a href="#RBP">Raphaël<br>Beuzart-Plessis</a></td>
+                        <td rowspan="2">Hike/<br>Free afternoon</td>
+                        <td class="talk"><a href="#BHoward">Ben Howard</a></td>
+                        <td rowspan="2">Free afternoon</td>
                     </tr>
-                    <tr>
+                    <tr style="height:4.3rem">
                         <td class="time-col">15:30 &ndash; 16:30</td>
-                        <td><a href="#HJLee">Heejong Lee</a></td>
-                        <td><a href="#BDong">Bin Dong</a></td>
-                        <td>—</td>
-                        <td>Luis Garcia</td>
-                        <td>—</td>
+                        <td class="talk"><a href="#HJLee">Heejong Lee</a></td>
+                        <td class="talk"><a href="#BDong">Bin Dong</a></td>
+                        <td class="talk">Luis Garcia</td>
                     </tr>
                 </tbody>
             </table>
@@ -425,8 +428,8 @@
                 <li> <a style="color: black; text-decoration: none;" href="https://rycchen.github.io/">Ryan Chen (MPI Bonn)</a></li>
                 <li> <a style="color: black; text-decoration: none;" href="http://faculty.bicmr.pku.edu.cn/~dongbin/">Bin Dong (PKU)</a></li>
                 <li> <a style="color: black; text-decoration: none;" href="https://webusers.imj-prg.fr/~laurent.fargues/">Laurent Fargues (CNRS, Jussieu)</a></li>
-                <li> <a style="color: black; text-decoration: none;" href="https://www.homepages.ucl.ac.uk/~ucahljg/index.htm">Luis Garcia (UC London)</a></li>
                 <li> <a style="color: black; text-decoration: none;" href="https://huigaomath.github.io/">Hui Gao (SUSTech)</a></li>
+                <li> <a style="color: black; text-decoration: none;" href="https://www.homepages.ucl.ac.uk/~ucahljg/index.htm">Luis Garcia (UC London)</a></li>
                 <li> <a style="color: black; text-decoration: none;" href="https://ianandreigf.github.io/Website/">Ian Gleason (NU Singapore)</a></li>
                 <li> <a style="color: black; text-decoration: none;" href="https://sites.google.com/bc.edu/benjamin-howard/home/">Ben Howard (Boston College)</a></li>
                 <li> <a style="color: black; text-decoration: none;" href="https://www.kias.re.kr/kias/people/faculty/viewMember.do?memberId=11030&amp;menuNo=403008">Heejong Lee (Korea IAS)</a></li>
@@ -454,19 +457,28 @@
 		<hr style="width: 100%; margin: 2rem 0rem 0rem 0rem auto; border: none; border-top: 1px solid var(--anthracite);">
 
         <details>
-            <summary><h5>Registration and travel recommendations</h5></summary>
-            <h3>Registration</h3>
-            <p style="margin-bottom: 6px;">Official registration is closed. Please contact the organizers if you'd like to attend the event.</p>
-            <h3>Travel and accommodation</h3>
-            <p>The direct flight to Shanghai with taxi or train to Hangzhou is usually the fastest for international travelers. Hangzhou airport is more
-            convenient only if it does not lead to additional change of planes.</p>
-            <p>The two recommended hotels are the <a style="color:var(--green-accent); font-weight: bold; text-decoration: none;" href="https://www.shama.com/zijingang-hangzhou">Shama Hotel</a> and the <a style="color:var(--green-accent); font-weight: bold; text-decoration: none;" href="https://www.agoda.com/zh-hk/rezen-dong-hotel-hangzhou-xixi-longhu-paradise-walk/hotel/hangzhou-cn.html">Licheng Donggu Hotel</a>.</p>
+            <summary><h5>Travel planning, Registration</h5></summary>
+            <div class="info-section">
+                <div class="info-card">
+                <h4>Travel planning</h4>
+                    <ul>
+                        <li>For international travelers, flying to Shanghai and taking the taxi or train to Hangzhou is usually the fastest. Flying to Hangzhou can be more convenient if the lay over doesn't add too much extra travel time.</li>
+                        <li>Two hotel options close to campus are the <a style="color:var(--green-accent); font-weight: bold; text-decoration: none;" href="https://www.shama.com/zijingang-hangzhou">Shama Hotel</a> and the <a style="color:var(--green-accent); font-weight: bold; text-decoration: none;" href="https://www.agoda.com/zh-hk/rezen-dong-hotel-hangzhou-xixi-longhu-paradise-walk/hotel/hangzhou-cn.html">Licheng Donggu Hotel</a>.</li>
+                    </ul>
+                </div>
+                <div class="info-card">
+                    <h4>Registration</h4>
+                    <ul>
+                        <li>Registration for the event is closed.</li>
+                    </ul>
+                </div>
+            </div>
         </details>
 
         <hr style="width: 100%; margin: 2rem 0rem 0rem 0rem auto; border: none; border-top: 1px solid var(--anthracite);">
 
 		<details>
-            <summary><h5>Funding statement</h5></summary>
+            <summary><h5>Sponsors</h5></summary>
             <div class="funding">
                 <img src="NWO.svg" style="margin: 0 0 0 1rem;">
                 <p> This conference is partially funded by the Dutch Research Council (NWO) through grant VI.Veni.232.127.</p>
